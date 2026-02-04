@@ -62,7 +62,7 @@ const Slide26 = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className={`relative mb-12 ${index % 2 === 0 ? 'md:mr-auto md:pr-12 md:pl-0' : 'md:ml-auto md:pl-12 md:pr-0'}`}
+            className={`relative mb-12 ${index % 2 === 0 ? 'md:mr-auto md:pr-16 md:pl-0' : 'md:ml-auto md:pl-16 md:pr-0'}`}
             style={{ width: '90%', maxWidth: '500px' }}
           >
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-800">

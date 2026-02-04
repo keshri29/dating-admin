@@ -97,33 +97,33 @@ const Slide16 = () => {
         </div>
       </HighlightBox>
 
-      <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+      <div className="mt-12 mb-10">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <Building className="w-6 h-6" />
           Bank Integration:
         </h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <p className="text-gray-200 mb-4">ERP integrates directly with banking systems for:</p>
+            <p className="text-gray-800 mb-4">ERP integrates directly with banking systems for:</p>
             <ul className="space-y-3 pl-5">
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Auto bank reconciliation
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Online payment processing
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Real-time balance updates
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Bulk payment processing
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Payment status tracking
               </li>

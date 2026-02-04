@@ -127,7 +127,7 @@ const Slide22 = () => {
       </HighlightBox>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <UserCheck className="w-6 h-6" />
           Multi-level Security:
         </h3>

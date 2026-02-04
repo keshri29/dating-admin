@@ -8,7 +8,7 @@ const HighlightBox = ({ title, children, icon: Icon, color = 'yellow' }) => {
   };
 
   return (
-    <div className={`${colorClasses[color]} p-6 rounded-xl shadow-lg my-8`}>
+    <div className={`${colorClasses[color]} p-6 rounded-xl shadow-lg my-8 mb-6`}>
       {title && (
         <div className="flex items-center gap-3 mb-4">
           {Icon && <Icon className="w-5 h-5" />}

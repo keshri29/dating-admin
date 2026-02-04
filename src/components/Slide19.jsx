@@ -107,32 +107,32 @@ const Slide19 = () => {
       </HighlightBox>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <Smartphone className="w-6 h-6" />
           Customer Portal:
         </h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <p className="text-gray-200 mb-4">ERP includes a customer self-service portal with:</p>
+            <p className="text-gray-900 mb-4">ERP includes a customer self-service portal with:</p>
             <ul className="space-y-3 pl-5">
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Order placement and tracking
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Account statements and invoices
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Product catalog and pricing
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Complaint registration and tracking
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Credit limit and payment status
               </li>

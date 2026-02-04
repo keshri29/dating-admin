@@ -118,7 +118,7 @@ const Slide28 = () => {
       </HighlightBox>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <TrendingUp className="w-6 h-6" />
           Client Success Metrics:
         </h3>

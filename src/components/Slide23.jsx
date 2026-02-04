@@ -124,28 +124,28 @@ const Slide23 = () => {
       </HighlightBox>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <Wifi className="w-6 h-6" />
           Offline Capability:
         </h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <p className="text-gray-100 mb-4">Mobile apps work even without internet connection:</p>
+            <p className="text-gray-800 mb-4">Mobile apps work even without internet connection:</p>
             <ul className="space-y-3 pl-5">
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Record production, attendance, transactions offline
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Data syncs automatically when connection restored
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Critical for remote locations with poor connectivity
               </li>
-              <li className="flex items-center gap-2 text-white">
+              <li className="flex items-center gap-2 text-black">
                 <CheckCircle className="w-4 h-4 text-green-500" />
                 Ensures business continuity during network issues
               </li>
@@ -157,8 +157,8 @@ const Slide23 = () => {
               <div className="absolute inset-0 border-8 border-orange-500/20 rounded-full flex items-center justify-center">
                 <div className="text-center">
                   <WifiOff className="w-16 h-16 text-orange-500 mb-4 mx-auto" />
-                  <div className="text-xl font-bold text-blue-100">Offline Mode</div>
-                  <div className="text-gray-100">Work without internet</div>
+                  <div className="text-xl font-bold text-blue-900">Offline Mode</div>
+                  <div className="text-gray-800">Work without internet</div>
                 </div>
               </div>
             </div>

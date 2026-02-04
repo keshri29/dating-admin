@@ -27,6 +27,11 @@ const Slide15 = () => {
       icon: Receipt,
       title: "Complex Pricing",
       description: "Multiple rate structures, discounts, schemes hard to manage"
+    },
+    {
+      icon: Receipt,
+      title: "Manual Billing Systems",
+      description: "Paper-based systems, manual follow-ups, errors"
     }
   ];
 
@@ -125,13 +130,13 @@ const Slide15 = () => {
       </HighlightBox>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-100 mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-3">
           <CogIcon className="w-6 h-6" />
           Automated Workflow:
         </h3>
         
         <div className="bg-gray-50 p-6 rounded-xl">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-6 text-center">
             {workflowSteps.map((step, index) => (
               <React.Fragment key={index}>
                 <div>

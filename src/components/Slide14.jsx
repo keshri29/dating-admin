@@ -160,7 +160,7 @@ const Slide14 = () => {
               initial={{ rotate: -5 }}
               animate={{ rotate: 5 }}
               transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
-              className="w-48 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-[2rem] p-5 shadow-2xl"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-[2rem] p-5 shadow-2xl"
             >
               <div className="w-full h-full bg-gray-900/30 rounded-2xl p-4 flex flex-col items-center">
                 <div className="text-center text-white mb-4">

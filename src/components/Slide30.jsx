@@ -1,5 +1,4 @@
-import React from 'react';
-import SlideHeader from './common/SlideHeader';
+ import SlideHeader from './common/SlideHeader';
 import { Building, User, Truck, Store, Phone, Mail, Globe, MapPin, Calendar, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -24,7 +23,7 @@ const Slide30 = () => {
       />
 
       <div className="text-center my-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-8">Let's build:</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-8">Let&apos;s build:</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
           {[
@@ -145,11 +144,7 @@ const Slide30 = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-
-      <div className="text-center mt-8 text-gray-500 text-sm">
-        <p>© 2023 TextileERP Pro. All rights reserved. | Confidential & Proprietary</p>
-      </div>
+      </motion.div> 
     </div>
   );
 };

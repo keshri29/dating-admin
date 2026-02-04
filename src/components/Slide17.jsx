@@ -26,6 +26,11 @@ const Slide17 = () => {
       icon: Truck,
       title: "Stock Replenishment Issues",
       description: "Manual ordering leads to stock-outs or overstocking"
+    },
+    {
+      icon: Info,
+      title: "Lack of Customer Data",
+      description: "No real-time insights into customer behavior"
     }
   ];
 
@@ -65,8 +70,7 @@ const Slide17 = () => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-        {/* Challenges */}
-        <div>
+         <div>
           <h3 className="text-xl font-bold text-red-500 mb-4 flex items-center gap-2">
             <StoreIcon className="w-5 h-5" />
             Retail Challenges:
@@ -109,9 +113,8 @@ const Slide17 = () => {
         color="yellow"
       >
         <div className="text-center">
-          <div className="inline-block w-24 h-24 bg-gradient-to-br from-blue-800 to-blue-900 rounded-full flex items-center justify-center text-white font-bold text-lg mb-6 shadow-xl">
-            <Server className="w-8 h-8" />
-            <br />
+          <div className="inline-block w-24 h-24 bg-gradient-to-br from-blue-800 to-blue-900 rounded-full items-center justify-center text-white font-bold text-lg mb-6 shadow-xl">
+             <br />
             HQ
           </div>
           

@@ -27,11 +27,7 @@ const Slide1 = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
         className="mb-12"
-      >
-        <div className="inline-flex items-center gap-2 bg-white/15 px-6 py-3 rounded-full border-2 border-yellow-400 text-lg mb-6">
-          <Award className="w-5 h-5" />
-          20+ Years in Textile & ERP Solutions
-        </div>
+      > 
         <h3 className="text-2xl md:text-3xl mb-2">
           Presented by: <span className="text-yellow-400">Tridev Cloud & IT Solution Pvt. Ltd.</span>
         </h3>
@@ -48,13 +44,6 @@ const Slide1 = () => {
             <Target className="w-6 h-6" />
             Vision: One Platform to Control Entire Textile Business
           </div>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
-          <StatCard value="500+" label="Textile Clients" delay={0.8} />
-          <StatCard value="98%" label="Client Satisfaction" delay={0.9} />
-          <StatCard value="40%" label="Avg. Cost Reduction" delay={1.0} />
-          <StatCard value="30+" label="Countries Served" delay={1.1} />
         </div>
       </motion.div>
     </div>

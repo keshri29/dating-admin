@@ -131,7 +131,7 @@ const Slide18 = () => {
         title="End-to-End Order Lifecycle:"
         color="green"
       >
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-9 gap-4 text-center mt-6">
           {[
             { step: 1, title: "Inquiry", desc: "Customer inquiry received" },
             { step: 2, title: "Quotation", desc: "Price & delivery commitment" },

@@ -138,7 +138,7 @@ function App() {
   const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-gray-800 overflow-hidden flex flex-col">
+    <div className="min-h-screen text-gray-800 overflow-hidden flex flex-col">
       {/* Header */}
       <header className="bg-blue-950/95 text-white px-4 md:px-8 py-3 md:py-4 flex flex-col md:flex-row justify-between items-center shadow-xl z-50">
         <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-0">

@@ -44,7 +44,7 @@ const Slide3 = () => {
   ];
 
   return (
-    <div>
+    <div className=''>
       <SlideHeader
         title="Textile Industry Today"
         subtitle="Reality check - Challenges in the modern textile landscape"
