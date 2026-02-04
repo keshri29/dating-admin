@@ -1,28 +1,38 @@
-/** @type {import('tailwindcss').Config} */
 export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
-  "./node_modules/react-datepicker/**/*.{js,jsx,ts,tsx}",
 ];
 export const theme = {
   extend: {
     colors: {
-      'primary-red': '#DC2626',
-      'dark-red': '#B91C1C',
-      'light-red': '#FEE2E2',
+      'primary-blue': '#1a237e',
+      'dark-blue': '#0d1440',
+      'accent-yellow': '#ffc107',
+      'accent-orange': '#ff9800',
+      'success-green': '#4caf50',
+      'danger-red': '#f44336',
+      'light-bg': '#f8f9fa',
+      'medium-gray': '#6c757d',
+    },
+    backgroundImage: {
+      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
     },
     animation: {
-      'fade-in': 'fadeIn 0.5s ease-in-out',
-      'slide-up': 'slideUp 0.3s ease-out',
-      'pulse-slow': 'pulse 3s infinite',
+      'pulse': 'pulse 2s infinite',
+      'slide-in': 'slideIn 0.8s ease forwards',
+      'fade-in-up': 'fadeInUp 0.8s ease forwards',
     },
     keyframes: {
-      fadeIn: {
-        '0%': { opacity: '0' },
-        '100%': { opacity: '1' },
+      slideIn: {
+        'from': { opacity: 0, transform: 'translateX(30px)' },
+        'to': { opacity: 1, transform: 'translateX(0)' },
       },
-      slideUp: {
-        '0%': { transform: 'translateY(20px)', opacity: '0' },
-        '100%': { transform: 'translateY(0)', opacity: '1' },
+      fadeInUp: {
+        'from': { opacity: 0, transform: 'translateY(40px)' },
+        'to': { opacity: 1, transform: 'translateY(0)' },
+      },
+      spin: {
+        'from': { transform: 'rotate(0deg)' },
+        'to': { transform: 'rotate(360deg)' },
       },
     },
   },

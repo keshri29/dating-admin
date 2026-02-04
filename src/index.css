@@ -2,95 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'react-datepicker/dist/react-datepicker.css';
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #dc2626;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b91c1c;
-}
-
-/* React DatePicker custom styles */
-.react-datepicker {
-  font-family: inherit;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-}
-
-.react-datepicker__header {
-  background-color: #fef2f2;
-  border-bottom: 1px solid #e5e7eb;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
-.react-datepicker__current-month {
-  color: #111827;
-  font-weight: 600;
-}
-
-.react-datepicker__day--selected {
-  background-color: #dc2626;
-  border-radius: 0.375rem;
-}
-
-.react-datepicker__day--selected:hover {
-  background-color: #b91c1c;
-}
-
-.react-datepicker__day:hover {
-  background-color: #fef2f2;
-  border-radius: 0.375rem;
-}
-
-/* Gallery image loading animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+@layer base {
+  body {
+    @apply antialiased overflow-x-hidden;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-blue-800 to-yellow-400 rounded;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-blue-900 to-orange-500;
   }
 }
 
-.gallery-item {
-  animation: fadeIn 0.3s ease-out;
-}
-
-/* Video play button animation */
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
+@layer components {
+  .section-divider {
+    @apply h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent my-8 border-0;
   }
-  50% {
-    transform: scale(1.05);
+  
+  .dashboard-widget {
+    @apply bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 flex flex-col justify-center items-center text-white font-semibold;
   }
-}
-
-.video-play-button {
-  animation: pulse 2s infinite;
+  
+  .timeline-item {
+    @apply relative mb-12;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    @apply ml-0 mr-auto;
+  }
+  
+  .timeline-item:nth-child(even) {
+    @apply ml-auto mr-0;
+  }
+  
+  .timeline-content {
+    @apply bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-800;
+  }
+  
+  .cta-button {
+    @apply bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 font-bold py-3 px-8 rounded-full 
+           hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex items-center gap-3 
+           text-lg shadow-lg;
+  }
 }
