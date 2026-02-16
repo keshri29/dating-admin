@@ -1,58 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------- */
+/* Base Layer */
+/* -------------------- */
 @layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
   body {
-    @apply antialiased overflow-x-hidden;
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-100 rounded;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-blue-800 to-yellow-400 rounded;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gradient-to-b from-blue-900 to-orange-500;
+    @apply bg-gray-50 text-gray-900;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
+/* -------------------- */
+/* Components Layer */
+/* -------------------- */
 @layer components {
-  .section-divider {
-    @apply h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent my-8 border-0;
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
   }
   
-  .dashboard-widget {
-    @apply bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 flex flex-col justify-center items-center text-white font-semibold;
+  .stat-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6 cursor-pointer hover:shadow-md transition-shadow;
   }
   
-  .timeline-item {
-    @apply relative mb-12;
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors;
   }
   
-  .timeline-item:nth-child(odd) {
-    @apply ml-0 mr-auto;
+  .btn-outline {
+    @apply border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors;
   }
   
-  .timeline-item:nth-child(even) {
-    @apply ml-auto mr-0;
+  .badge-success {
+    @apply bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium;
   }
   
-  .timeline-content {
-    @apply bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-800;
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium;
   }
   
-  .cta-button {
-    @apply bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 font-bold py-3 px-8 rounded-full 
-           hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex items-center gap-3 
-           text-lg shadow-lg;
+  .badge-danger {
+    @apply bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .badge-info {
+    @apply bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium;
   }
 }
