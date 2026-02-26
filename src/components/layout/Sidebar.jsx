@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -10,7 +11,8 @@ import {
   Settings,
   LogOut,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Package
 } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../store/slices/authSlice';
@@ -28,6 +30,7 @@ const Sidebar = ({ open, setOpen }) => {
     { path: '/events', icon: Calendar, label: 'Events' },
     { path: '/analytics', icon: BarChart3, label: 'Analytics' },
     { path: '/settings', icon: Settings, label: 'Settings' },
+    { path: '/subscriptions', icon: Package, label: 'Subscriptions' },
   ];
 
   const handleLogout = () => {

@@ -9,6 +9,7 @@ import usersReducer from './slices/usersSlice';
 // import moderationReducer from './slices/moderationSlice';
 // import eventsReducer from './slices/eventsSlice';
 import analyticsReducer from './slices/analyticsSlice';
+import subscriptionsReducer from './slices/subscriptionsSlice';
 
 const persistConfig = {
   key: 'root',
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
 //   moderation: moderationReducer,
 //   events: eventsReducer,
   analytics: analyticsReducer,
+  subscriptions: subscriptionsReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

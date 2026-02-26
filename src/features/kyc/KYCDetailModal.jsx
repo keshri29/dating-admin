@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { X, CheckCircle, XCircle, RotateCcw } from 'lucide-react';
 
@@ -55,8 +56,7 @@ const KYCDetailModal = ({ kyc, onClose }) => {
             </div>
           </div>
 
-          {/* Personal Details */}
-          <div>
+           <div>
             <h3 className="font-semibold mb-3">Personal Details</h3>
             <div className="grid grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg">
               <div>
@@ -78,16 +78,16 @@ const KYCDetailModal = ({ kyc, onClose }) => {
           <div>
             <h3 className="font-semibold mb-3">Documents</h3>
             <div className="grid grid-cols-2 gap-4">
-              <div>
+              {/* <div>
                 <label className="text-sm text-gray-600 mb-2 block">ID Document</label>
                 <div className="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
                   <span className="text-gray-500">Document Preview</span>
                 </div>
-              </div>
+              </div> */}
               <div>
-                <label className="text-sm text-gray-600 mb-2 block">Selfie</label>
+                <label className="text-sm text-gray-600 mb-2 block">Selfie Video</label>
                 <div className="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <span className="text-gray-500">Selfie Preview</span>
+                  <span className="text-gray-500">Selfie Video Preview</span>
                 </div>
               </div>
             </div>

@@ -12,6 +12,7 @@ import Events from '../features/events/Events';
 import Analytics from '../features/analytics/Analytics';
 import Settings from '../features/settings/Settings';
 import Layout from '../components/layout/Layout';
+import Subscriptions from '../features/subscriptions/Subscriptions';
 
 export const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ export const router = createBrowserRouter([
         path: 'settings',
         element: <Settings />,
       },
+      {
+  path: 'subscriptions',
+  element: <Subscriptions />,
+},
     ],
   },
 ]);
