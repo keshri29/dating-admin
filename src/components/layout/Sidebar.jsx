@@ -31,6 +31,7 @@ const Sidebar = ({ open, setOpen }) => {
     { path: '/analytics', icon: BarChart3, label: 'Analytics' },
     { path: '/settings', icon: Settings, label: 'Settings' },
     { path: '/subscriptions', icon: Package, label: 'Subscriptions' },
+    // { path: '/rbac', icon: Package, label: 'RBAC' },
   ];
 
   const handleLogout = () => {

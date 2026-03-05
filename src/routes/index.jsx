@@ -13,6 +13,7 @@ import Analytics from '../features/analytics/Analytics';
 import Settings from '../features/settings/Settings';
 import Layout from '../components/layout/Layout';
 import Subscriptions from '../features/subscriptions/Subscriptions';
+import RoleManagement from '../features/RoleManagement/RoleManagement';
 
 export const router = createBrowserRouter([
   {
@@ -72,9 +73,13 @@ export const router = createBrowserRouter([
         element: <Settings />,
       },
       {
-  path: 'subscriptions',
-  element: <Subscriptions />,
-},
+        path: 'subscriptions',
+        element: <Subscriptions />,
+      },
+      {
+        path: 'rbac',
+        element: <RoleManagement />,
+      },
     ],
   },
 ]);

@@ -25,14 +25,14 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const result = await dispatch(login(formData));
-    if (login.fulfilled.match(result)) {
+     if (result?.payload?.data?.token) {
       navigate('/dashboard');
     }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-dark to-primary flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-8">
+      <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-primary-dark">Admin Panel</h1>
           <p className="text-gray-600 mt-2">Sign in to access the dashboard</p>
@@ -98,12 +98,6 @@ const Login = () => {
               </>
             )}
           </button>
-
-          <div className="text-center text-sm text-gray-600">
-            <p>Demo Credentials:</p>
-            <p>Email: admin@example.com</p>
-            <p>Password: admin123</p>
-          </div>
         </form>
       </div>
     </div>
