@@ -22,7 +22,7 @@ export const fetchModules = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const token = getToken();
-      const response = await axios.get(`${API_URL}/admin/get-modules`, {
+      const response = await axios.get(`${API_URL}/admin/modules`, {
         headers: {
           'Content-Type': 'application/json',
           ...(token && { 'Authorization': `Bearer ${token}` })
@@ -73,7 +73,7 @@ export const fetchRoles = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const token = getToken();
-      const response = await axios.get(`${API_URL}/admin/get-roles`, {
+      const response = await axios.get(`${API_URL}/admin/roles`, {
         headers: {
           'Content-Type': 'application/json',
           ...(token && { 'Authorization': `Bearer ${token}` })
@@ -124,7 +124,7 @@ export const fetchPermissions = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const token = getToken();
-      const response = await axios.get(`${API_URL}/admin/get-permissions`, {
+      const response = await axios.get(`${API_URL}/admin/permissions`, {
         headers: {
           'Content-Type': 'application/json',
           ...(token && { 'Authorization': `Bearer ${token}` })
@@ -175,7 +175,7 @@ export const fetchAdmins = createAsyncThunk(
   async ({ limit = 10, offset = 0 } = {}, { rejectWithValue }) => {
     try {
       const token = getToken();
-      const response = await axios.get(`${API_URL}/admin/get-admins?limit=${limit}&offset=${offset}`, {
+      const response = await axios.get(`${API_URL}/admin/admins?limit=${limit}&offset=${offset}`, {
         headers: {
           'Content-Type': 'application/json',
           ...(token && { 'Authorization': `Bearer ${token}` })
