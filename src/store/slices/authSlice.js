@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'https://65.0.80.7.nip.io/api';
+const API_URL = 'https://3.110.243.44.nip.io/api';
 
 export const login = createAsyncThunk(
   'auth/login',
