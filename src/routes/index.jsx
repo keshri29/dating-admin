@@ -14,6 +14,7 @@ import Settings from '../features/settings/Settings';
 import Layout from '../components/layout/Layout';
 import Subscriptions from '../features/subscriptions/Subscriptions';
 import RoleManagement from '../features/RoleManagement/RoleManagement';
+import NotificationPanel from '../features/notifications/NotificationPanel';
 
 export const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ export const router = createBrowserRouter([
         path: 'rbac',
         element: <RoleManagement />,
       },
+      {
+  path: 'notifications',
+  element: <NotificationPanel />,
+},
     ],
   },
 ]);

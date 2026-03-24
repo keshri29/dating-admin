@@ -12,7 +12,8 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
-  Package
+  Package,
+  Bell
 } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../store/slices/authSlice';
@@ -32,6 +33,7 @@ const Sidebar = ({ open, setOpen }) => {
     { path: '/settings', icon: Settings, label: 'Settings' },
     { path: '/subscriptions', icon: Package, label: 'Subscriptions' },
     { path: '/rbac', icon: Package, label: 'RBAC' },
+    { path: '/notifications', icon: Bell, label: 'Notifications' },
   ];
 
   const handleLogout = () => {
